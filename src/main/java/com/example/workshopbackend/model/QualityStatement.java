@@ -25,6 +25,9 @@ public class QualityStatement {
     @JsonProperty("Statement")
     private String statement;
 
+    @Column(name = "OutcomeTypeID")
+    @JsonProperty("OutcomeTypeID")
+    private String outcomeTypeID;
 
     @Column(name = "GroupID")
     @JsonProperty("GroupID")
