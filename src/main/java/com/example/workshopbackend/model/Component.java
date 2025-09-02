@@ -8,15 +8,7 @@ import jakarta.persistence.*;
 @NamedStoredProcedureQueries({
         @NamedStoredProcedureQuery(
                 name = "Component.getAllComponentsProcedure",
-                procedureName = "GetComponents", // your stored procedure name
-                resultClasses = Component.class
-        ),
-        @NamedStoredProcedureQuery(
-                name = "Component.getComponentByIdProcedure",
-                procedureName = "get_component_by_id",
-                parameters = {
-                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "component_id", type = Long.class)
-                },
+                procedureName = "GetComponents",
                 resultClasses = Component.class
         )
 })
@@ -34,7 +26,19 @@ public class Component {
     private Integer componentTypeId;
 
     @JsonProperty("SerialNumber")
-    private String SerialNumber;
+    private String serialNumber;
+
+    @JsonProperty("FlagOutcome")
+    private Boolean flagOutcome;
+
+    @JsonProperty("FreeTextOutcome")
+    private String freeTextOutcome;
+
+    @JsonProperty("NumberOutcome")
+    private Float numberOutcome;
+
+    @JsonProperty("PictureOutcome")
+    private String pictureOutcome;
 
     public Integer getComponentId() {
         return componentId;

@@ -17,6 +17,7 @@ public class CombinedDataService {
 
     public List<CombinedData> getCombinedDataFromJson() throws IOException {
         InputStream inputStream = new ClassPathResource("data/combined-data.json").getInputStream();
-        return objectMapper.readValue(inputStream, new TypeReference<List<CombinedData>>() {});
+        return objectMapper.readValue(inputStream, new TypeReference<>() {
+        });
     }
 }

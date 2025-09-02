@@ -24,14 +24,4 @@ public class ComponentController {
         List<Component> components = componentService.getAllComponents();
         return ResponseEntity.ok(components);
     }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Component> getComponentById(@PathVariable Long id) {
-        Component component = componentService.getComponentById(id);
-        if (component != null) {
-            return ResponseEntity.ok(component);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
 }

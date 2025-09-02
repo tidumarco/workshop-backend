@@ -22,13 +22,4 @@ public class ComponentService {
     public List<Component> getAllComponents() {
         return componentRepository.getAllComponents();
     }
-
-    @Transactional()
-    public Component getComponentById(Long id) {
-        List<Component> results = componentRepository.getComponentById(id);
-        if (results.isEmpty()) {
-            return null;
-        }
-        return results.get(0);
-    }
 }
