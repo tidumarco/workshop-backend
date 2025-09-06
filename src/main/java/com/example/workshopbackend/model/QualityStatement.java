@@ -29,11 +29,26 @@ public class QualityStatement {
     @JsonProperty("OutcomeTypeID")
     private String outcomeTypeID;
 
-    @Column(name = "GroupID")
-    @JsonProperty("GroupID")
-    private int groupID;
+    @JsonProperty("GroupName")
+    private String groupName;
 
     @Transient
     @JsonProperty("Values")
-    private Map<String, Object> values;
+    private Map<Integer, Object> values;
+
+    public Map<Integer, Object> getValues() {
+        return values;
+    }
+
+    public void setValues(Map<Integer, Object> values) {
+        this.values = values;
+    }
+
+    public String getOutcomeTypeID() {
+        return outcomeTypeID;
+    }
+
+    public void setOutcomeTypeID(String outcomeTypeID) {
+        this.outcomeTypeID = outcomeTypeID;
+    }
 }

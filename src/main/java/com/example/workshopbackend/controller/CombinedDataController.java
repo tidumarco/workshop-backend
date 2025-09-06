@@ -24,7 +24,8 @@ public class CombinedDataController {
     @GetMapping
     public ResponseEntity<?> getCombinedData() {
         try {
-            List<CombinedData> data = combinedDataService.getCombinedDataFromJson();
+            List<CombinedData> data = combinedDataService.getCombinedDataFromDatabase();
+//            List<CombinedData> data = combinedDataService.getCombinedDataFromJson();
 
             ObjectMapper mapper = new ObjectMapper();
             String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(data);

@@ -20,10 +20,10 @@ public class Component {
     private Integer componentId;
 
     @JsonProperty("ServiceOrderID")
-    private Integer serviceOrderId;
+    private String serviceOrderId;
 
     @JsonProperty("ComponentTypeID")
-    private Integer componentTypeId;
+    private String componentTypeId;
 
     @JsonProperty("SerialNumber")
     private String serialNumber;
@@ -46,5 +46,13 @@ public class Component {
 
     public void setComponentId(Integer componentId) {
         this.componentId = componentId;
+    }
+
+    public String getComponentTypeId() {
+        return componentTypeId;
+    }
+
+    public String getServiceOrderId() {
+        return serviceOrderId;
     }
 }

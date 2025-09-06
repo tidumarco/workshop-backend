@@ -16,4 +16,20 @@ public class CombinedData {
 
     @JsonProperty("QualityStatements")
     private List<QualityStatement> qualityStatements;
+
+    public void setQualityStatements(List<QualityStatement> qualityStatements) {
+        this.qualityStatements = qualityStatements;
+    }
+
+    public void setComponents(List<Component> components) {
+        this.components = components;
+    }
+
+    public void setServiceOrderID(String serviceOrderID) {
+        this.serviceOrderID = serviceOrderID;
+    }
+
+    public void setComponentTypeID(String componentTypeID) {
+        this.componentTypeID = componentTypeID;
+    }
 }

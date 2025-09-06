@@ -13,6 +13,7 @@
         "QualityStatementID": 1,
         "Statement": "Valve Status OK",
         "OutcomeTypeID": "flag",
+        "GroupName": "Valves",
         "Values": {
           "1": false,
           "2": false,
@@ -24,6 +25,7 @@
         "QualityStatementID": 2,
         "Statement": "Incoming Condition",
         "OutcomeTypeID": "text",
+        "GroupName": "Valves",
         "Values": {
           "1": "",
           "2": "",
@@ -35,6 +37,7 @@
         "QualityStatementID": 3,
         "Statement": "Seal Clearance (mm)",
         "OutcomeTypeID": "number",
+        "GroupName": "Valves Guides",
         "Values": {
           "1": 0,
           "2": 0,
@@ -46,6 +49,7 @@
         "QualityStatementID": 4,
         "Statement": "Seal Damage Photo",
         "OutcomeTypeID": "picture",
+        "GroupName": "Valves Guides",
         "Values": {
           "1": 0,
           "2": 0,
@@ -57,6 +61,7 @@
         "QualityStatementID": 5,
         "Statement": "Valve rotation (degrees)",
         "OutcomeTypeID": "number",
+        "GroupName": "Valves Rotators",
         "Values": {
           "1": 0,
           "2": 0,
@@ -68,6 +73,7 @@
         "QualityStatementID": 6,
         "Statement": "Surface Scratches Present",
         "OutcomeTypeID": "flag",
+        "GroupName": "Valves Rotators",
         "Values": {
           "1": false,
           "2": false,
