@@ -27,12 +27,4 @@ public class PurchaseOrder {
     @Column(name = "CustomerID")
     @JsonProperty("CustomerID")
     private String customerId;
-
-    public Integer getPurchaseOrderId() {
-        return purchaseOrderId;
-    }
-
-    public void setPurchaseOrderId(Integer purchaseOrderId) {
-        this.purchaseOrderId = purchaseOrderId;
-    }
 }
